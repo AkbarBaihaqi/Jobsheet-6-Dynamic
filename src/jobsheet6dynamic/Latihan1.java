@@ -1,4 +1,7 @@
 package jobsheet6dynamic;
+
+import java.util.Scanner;
+
 public class Latihan1 {
     private static void tampilJudul(String identitas){
         System.out.println("Identitas: "+identitas);
@@ -9,8 +12,16 @@ public class Latihan1 {
     public static void main(String[] args) {
         String identitas = "Akbar Baihaqi Putra Aji Pratama/XRPL5/4";
         
-        tampilJudul(identitas);
-       
+        tampilJudul(identitas);   
+        int n = tampilInput();
+    }
+    
+    private static int tampilInput(){
+        Scanner b = new Scanner (System.in);
+        System.out.print("Bilangan ke-: ");
+        int n = b.nextInt();
+        
+        return n;
     }
     
 }
